@@ -2,6 +2,7 @@
 	import java.awt.Graphics;
 	import java.awt.Insets;
 import java.awt.Polygon;
+import java.awt.Rectangle;
 
 import javax.swing.JPanel;
 	 
@@ -24,7 +25,7 @@ import javax.swing.JPanel;
 	                        int height = y2 - y1;
 	 
 	                        //Paint the background
-	                        g.setColor(Color.BLUE);
+	                        g.setColor(Color.WHITE);
 	                        g.fillRect(x1, y1, width+1, height+1);
 	                        
 //	                        //Draw a border
@@ -41,16 +42,51 @@ import javax.swing.JPanel;
 //	                        g.setColor(Color.WHITE);
 //	                        g.drawLine(x2, y1, x1, y2);
 				
-	                        Polygon p = new Polygon();
-	                        p.addPoint(x1 + 5, y1 + 25);
-	                        p.addPoint(x1 + 20, y1 + 10);
-	                        p.addPoint(x1 + 35, y1 + 25);
-	                        p.addPoint(x1 + 25, y1 + 25);
-	                        p.addPoint(x1 + 25, y1 + 45);
-	                        p.addPoint(x1 + 15, y1 + 45);
-	                        p.addPoint(x1 + 15, y1 + 25);
-	                        g.setColor(Color.YELLOW);
-	                        g.fillPolygon(p);
+//	                        Polygon p = new Polygon();
+//	                        p.addPoint(x1 + 5, y1 + 25);
+//	                        p.addPoint(x1 + 20, y1 + 10);
+//	                        p.addPoint(x1 + 35, y1 + 25);
+//	                        p.addPoint(x1 + 25, y1 + 25);
+//	                        p.addPoint(x1 + 25, y1 + 45);
+//	                        p.addPoint(x1 + 15, y1 + 45);
+//	                        p.addPoint(x1 + 15, y1 + 25);
+//	                        g.setColor(Color.YELLOW);
+//	                        g.fillPolygon(p);
+	                        
+	                        
+	                        Polygon r = new Polygon();
+	                        r.addPoint(x1+10, y1);
+	                        r.addPoint(x1+220, y1);
+	                        r.addPoint(x1 + 220, y1+37);
+	                        r.addPoint(x1+10, y1 + 37);
+	                        g.setColor(Color.RED);
+	                        g.fillPolygon(r);
+	                        
+	                        Polygon r3 = new Polygon();
+	                        r3.addPoint(x1+10, y1+113);
+	                        r3.addPoint(x1+220, y1+113);
+	                        r3.addPoint(x1 + 220, y1+150);
+	                        r3.addPoint(x1+10, y1 + 150);
+	                        g.setColor(Color.RED);
+	                        g.fillPolygon(r3);
+	                        
+	                        Polygon r2 = new Polygon();
+	                        r2.addPoint(x1+10, y1+55);
+	                        r2.addPoint(x1+220, y1+55);
+	                        r2.addPoint(x1 + 220, y1+90);
+	                        r2.addPoint(x1+10, y1 + 90);
+	                        g.setColor(Color.RED);
+	                        g.fillPolygon(r2);
+	                        
+	                        Polygon tri = new Polygon();
+	                        tri.addPoint(x1+10, y1);
+	                        tri.addPoint(x1 + 10, y1+150);
+	                        tri.addPoint(x1 + 115, y1+75);
+	                        g.setColor(Color.BLUE);
+	                        g.fillPolygon(tri);
+	                        
+	                        
+	                        
 	                        
 	                        Polygon p2 = new Polygon();
 	                        p2.addPoint(x1 + 25, y1 + 73);
@@ -64,7 +100,9 @@ import javax.swing.JPanel;
 	                        p2.addPoint(x1 + 34, y1 + 98);
 	                        p2.addPoint(x1 + 38, y1 + 83);
 	                        g.setColor(Color.WHITE);
-	                        g.drawPolygon(p2);
+	                        g.fillPolygon(p2);
+	                        
+	                        
 				}
 	}
 
