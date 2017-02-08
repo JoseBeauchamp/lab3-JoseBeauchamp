@@ -32,6 +32,7 @@
 	                      //Draw a border2
 	                        g.setColor(Color.YELLOW);
 	                        g.drawRect(x1+4, y1+4, width-8, height-8);
+	                        
 	            }
 	}
 
